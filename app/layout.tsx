@@ -1,11 +1,8 @@
 import type React from "react"
 import "@/app/globals.css"
-import { Inter } from "next/font/google"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
-
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Heirstead Probate & Legal Affairs - Expert Probate Services Since 1999",
@@ -28,7 +25,7 @@ export default function RootLayout({
         <link rel="icon" href="/images/lady-justice-teal.jpeg" sizes="any" />
         <link rel="apple-touch-icon" href="/images/lady-justice-teal.jpeg" />
       </head>
-      <body className={inter.className}>
+      <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
             <Navbar />
